@@ -178,28 +178,29 @@ body {
 	 transform: rotate(-45deg) translate(0, -1px);
  }
  
- #mobileMenu
- {
+ #mobileMenu li a {
+	text-decoration: none;
+	color: black;
+ }
+ 
+ #mobileMenu {
 	 position: absolute;
 	 text-align: center;
 	 width: 100%;
 	 margin: -100px 0 0 -50px;
-	 padding: 50px;
-	 padding-top: 125px;
-	 
+	 /* padding: 50px; */
+	 /* padding-top: 125px; */	 
 	 background: #ededed;
 	 list-style-type: none;
-	 -webkit-font-smoothing: antialiased;
-	 
+	 -webkit-font-smoothing: antialiased;	 
 	 transform-origin: 0% 0%;
-	 transform: translate(-100%, 0);
-	 
+	 transform: translate(-100%, 0);	 
 	 transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	 
  }
  
- #mobileMenu li
- {
-	 padding: 10px 0;
+ #mobileMenu li {
+	 /* padding: 10px 0; */
 	 font-size: 22px;
  }
  
@@ -236,11 +237,12 @@ header.desktopHeader #myBox {
 	align-items: flex-end;
 }
 
-.navigation a {
+.navigation li a {
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+	color: white;
+	
 }
 
 .navigation a:hover {
@@ -464,7 +466,7 @@ header.desktopHeader #myBox div input {
 }
 
 .button_1:hover {
-	background-color:black;
+	background-color:gray;
 }
 
 .button_1:active {
